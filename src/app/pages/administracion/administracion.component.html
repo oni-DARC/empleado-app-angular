@@ -1,0 +1,84 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#" (click)="cerrarSesion()">Gestión de Empleados</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/empleados">Empleados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" (click)="cerrarSesion()">Cerrar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Tabla de Empleados -->
+<div class="container mt-4">
+  <h2>Administración de Empleados</h2>
+  <button class="btn btn-success mb-3" (click)="abrirModalAgregar()">Agregar Empleado</button>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Puesto</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empleado of empleados">
+        <td>{{ empleado.id }}</td>
+        <td>{{ empleado.nombre }}</td>
+        <td>{{ empleado.correo }}</td>
+        <td>{{ empleado.puesto }}</td>
+        <td>
+          <button class="btn btn-warning btn-sm" (click)="abrirModalEditar(empleado)">Editar</button>
+          <button class="btn btn-danger btn-sm ms-2" (click)="eliminarEmpleado(empleado.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal para Agregar / Editar Empleados -->
+<div class="modal fade" #modalEmpleado tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{ editando ? 'Editar Empleado' : 'Agregar Empleado' }}</h5>
+        <button type="button" class="btn-close" (click)="cerrarModal()" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="empleadoForm">
+          <div class="mb-3">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" formControlName="nombre">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Correo</label>
+            <input type="email" class="form-control" formControlName="correo">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Puesto</label>
+            <input type="text" class="form-control" formControlName="puesto">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" (click)="cerrarModal()">Cancelar</button>
+        <button type="button" class="btn btn-primary" (click)="guardarEmpleado()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

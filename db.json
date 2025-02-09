@@ -1,0 +1,22 @@
+{
+  "empleados": [
+    {
+      "id": "1",
+      "nombre": "Juan Pérez 1",
+      "correo": "juan@example.com",
+      "puesto": "Desarrollador"
+    },
+    {
+      "id": "985a",
+      "nombre": "suaza s",
+      "correo": "sds@gmail.com",
+      "puesto": "dos s"
+    },
+    {
+      "id": "35ab",
+      "nombre": "sds",
+      "correo": "sss@fdd.com",
+      "puesto": "sd sds"
+    }
+  ]
+}
