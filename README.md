@@ -57,3 +57,63 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+# Aplicativo Móvil: Gestión de Empleados
+
+## Especificaciones
+
+### 1. Interfaz de usuario con navegación mediante enrutamiento:
+- **Página de inicio con descripción de la aplicación.**:
+- **Página de 'Gestión de Empleados' para mostrar datos desde una API.**:
+- **Página de 'Administración' para agregar, editar y eliminar empleados.**:
+- **Página de 'Error 404' en caso de acceder a rutas no definidas.**:
+
+---
+
+### 2. Consumo de API REST
+- **GET:** Obtener lista de empleados
+- **POST:** Agregar un nuevo empleado.
+- **PUT:** Editar un empleado existente.
+- **DELETE:** Eliminar un empleado.
+
+---
+
+### 3. Manejo de formularios y validaciones:
+- Validación de campos obligatorios.
+- Validación de formato de correo electrónico.
+- Confirmación de contraseña.
+
+---
+
+### 4. Protección de rutas mediante guardianes (guards).
+- Es libre de usar cualquier librería de CSS o generar tus propios estilos personalizados.
+---
+
+### 5. Ejecución
+- En un consola ejecutar:  json-server --watch db.json --port 3000
+- En otra consola ejecutar: ng serve --open
+- Para el admin. Usuario: diego.a.rogel@example.com Clave: admin123
+---
+
+### 6. Capturas de Pantalla
+- Es libre de usar cualquier librería de CSS o generar tus propios estilos personalizados.
+- **Screen 1: Homes**
+  ![Screen 1](assets/screenshot/01-Home.png)
+
+- **Screen 2: Lista de Empleados**
+  ![Screen 2](assets/screenshot/02-ListaEmpleados.png)
+
+- **Screen 3: Login**
+  ![Screen 3](src/assets/screenshot/03-Login.png)
+
+- **Screen 4: Administración Empleado**
+  ![Screen 4](src/assets/screenshot/04-Administracion.png)
+
+- **Screen 5: Agregar Empleado**
+  ![Screen 5](src/assets/screenshot/05-Agregar.png)
+
+- **Screen 6: Editar**
+  ![Screen 6](src/assets/screenshot/06-Editar.png)
+
+- **Screen 7: Eliminar**
+  ![Screen 7](src/assets/screenshot/07-Eliminar.png)

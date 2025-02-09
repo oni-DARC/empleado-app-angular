@@ -22,7 +22,7 @@ export class LoginComponent {
   login(): void {
     const { email, password } = this.loginForm.value;
 
-    if (email === 'admin@example.com' && password === 'admin123') {
+    if (email === 'diego.a.rogel@example.com' && password === 'admin123') {
       localStorage.setItem('auth', 'true'); // ✅ Guardar autenticación en localStorage
       this.router.navigate(['/administracion']);
     } else {
