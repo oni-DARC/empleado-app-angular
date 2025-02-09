@@ -63,10 +63,10 @@ For more information on using the Angular CLI, including detailed command refere
 ## Especificaciones
 
 ### 1. Interfaz de usuario con navegación mediante enrutamiento:
-- **Página de inicio con descripción de la aplicación.**:
-- **Página de 'Gestión de Empleados' para mostrar datos desde una API.**:
-- **Página de 'Administración' para agregar, editar y eliminar empleados.**:
-- **Página de 'Error 404' en caso de acceder a rutas no definidas.**:
+- Página de inicio con descripción de la aplicación.
+- Página de 'Gestión de Empleados' para mostrar datos desde una API.
+- Página de 'Administración' para agregar, editar y eliminar empleados.
+- Página de 'Error 404' en caso de acceder a rutas no definidas.
 
 ---
 
@@ -98,15 +98,17 @@ For more information on using the Angular CLI, including detailed command refere
 ### 6. Capturas de Pantalla
 - Es libre de usar cualquier librería de CSS o generar tus propios estilos personalizados.
 - **Screen 1: Homes**
-  ![Screen 1](assets/screenshot/01-Home.png)
+  ![Screen 1](src/assets/screenshot/01-Home.png)
 
 - **Screen 2: Lista de Empleados**
-  ![Screen 2](assets/screenshot/02-ListaEmpleados.png)
+  ![Screen 2](src/assets/screenshot/02-ListaEmpleados.png)
 
 - **Screen 3: Login**
+- **Usuario:** diego.a.rogel@example.com
+- **Clave:** admin123
   ![Screen 3](src/assets/screenshot/03-Login.png)
 
-- **Screen 4: Administración Empleado**
+- **Screen 4: Administración Empleados**
   ![Screen 4](src/assets/screenshot/04-Administracion.png)
 
 - **Screen 5: Agregar Empleado**
