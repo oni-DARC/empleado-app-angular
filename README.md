@@ -104,8 +104,8 @@ For more information on using the Angular CLI, including detailed command refere
   ![Screen 2](src/assets/screenshot/02-ListaEmpleados.png)
 
 - **Screen 3: Login**
-- **Usuario:** diego.a.rogel@example.com
-- **Clave:** admin123
+  - **Usuario:** diego.a.rogel@example.com
+  - **Clave:** admin123
   ![Screen 3](src/assets/screenshot/03-Login.png)
 
 - **Screen 4: Administración Empleados**
